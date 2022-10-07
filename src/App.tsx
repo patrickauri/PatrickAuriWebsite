@@ -1,6 +1,7 @@
 import React from "react"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Navigation } from "./components/Navigation"
+import { Error } from "./pages/Error"
 import { Home } from "./pages/Home"
 
 const App = () => {
@@ -9,7 +10,6 @@ const App = () => {
       <Navigation />
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Home />} />
           <Route path="/music"></Route>
           <Route path="/voice"></Route>
           <Route path="/design"></Route>
@@ -19,6 +19,8 @@ const App = () => {
           <Route path="/contact"></Route>
           <Route path="/socials"></Route>
           <Route path="/faq"></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>

@@ -1,5 +1,6 @@
 * {
   --text-color-main: #5e6286;
+  --icon-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
 }
 
 html,
@@ -28,20 +29,65 @@ code {
 
 .navigation {
   display: grid;
+  grid-template-columns: 65px auto 225px;
+  align-items: center;
   margin-top: 70px;
   margin-bottom: 120px;
   margin-left: 90px;
   margin-right: 90px;
   font-size: 23px;
+  font-weight: 400;
 }
 
 .nav-logo {
 }
 
 .nav-bar {
+  display: flex;
+  margin-left: 80px;
 }
 
 .nav-bar-button {
+  margin-right: 35px;
 }
 .nav-bar-dropdown {
+  margin-right: 35px;
+}
+
+.nav-cta-btn {
+  display: grid;
+  align-items: center;
+  height: 50px;
+  font-size: 21px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    90deg,
+    rgba(105, 102, 234, 1) 0%,
+    rgba(145, 112, 215, 1) 100%
+  );
+  border-radius: 25px;
+}
+
+.nav-cta-btn:hover {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 28px;
+  text-align: center;
+}
+
+.content-wrapper {
+  display: grid;
+  justify-content: center;
+}
+
+.pato-logo {
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: var(--icon-shadow);
 }
