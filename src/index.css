@@ -22,6 +22,14 @@ body {
   background-image: url("./assets/bg/BG.png");
 }
 
+a,
+a:hover,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -82,6 +90,7 @@ code {
 .content-wrapper {
   display: grid;
   justify-content: center;
+  justify-items: center;
 }
 
 .pato-logo {
@@ -90,4 +99,15 @@ code {
   height: 150px;
   border-radius: 50%;
   box-shadow: var(--icon-shadow);
+}
+
+.icons-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 14px;
+}
+
+.icons-grid-item {
+  opacity: 0.5;
 }
