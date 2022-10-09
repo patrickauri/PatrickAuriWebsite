@@ -30,6 +30,7 @@ export const Contact = () => {
       if (servicesChosen[i]) servicesDisplay = servicesDisplay.concat(`${e} `)
     })
     if (servicesDisplay !== "") servicesDisplay = servicesDisplay.slice(0, -1)
+    else servicesDisplay = "No service chosen"
 
     let subject: string = `PatrickAuri.com Contact Form (${servicesDisplay})`
     //let body: string = `Message from: ${name} (${email})%0D%0A%0D%0A ${message}%0D%0A%0D%0A ${services}`
