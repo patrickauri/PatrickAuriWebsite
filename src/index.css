@@ -184,3 +184,11 @@ textarea {
   display: grid;
   grid-template-columns: 25px auto;
 }
+
+.social-icons-wrapper {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 18px;
+  align-items: center;
+}

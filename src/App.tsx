@@ -5,6 +5,7 @@ import { Contact } from "./pages/Contact"
 import { Error } from "./pages/Error"
 import { FAQ } from "./pages/FAQ"
 import { Home } from "./pages/Home"
+import { Socials } from "./pages/Socials"
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
         <Route path="/translation"></Route>
         <Route path="/code"></Route>
         <Route path="/contact" element={<Contact />} />
-        <Route path="/socials"></Route>
+        <Route path="/socials" element={<Socials />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Error />} />
