@@ -14,22 +14,22 @@ export const Home = () => {
       <img src={Patrick} className="pato-logo" alt="Patrick" />
       <div className="icons-grid">
         <div className="icons-grid-item">
-          <img src={IconVideo} />
+          <img src={IconVideo} alt="Video Editing Icon" />
         </div>
         <div className="icons-grid-item">
-          <img src={IconDesign} />
+          <img src={IconDesign} alt="Design Icon" />
         </div>
         <div className="icons-grid-item">
-          <img src={IconTranslation} />
+          <img src={IconTranslation} alt="Translation Icon" />
         </div>
         <div className="icons-grid-item">
-          <img src={IconCode} />
+          <img src={IconCode} alt="Programming Icon" />
         </div>
         <div className="icons-grid-item">
-          <img src={IconVoice} />
+          <img src={IconVoice} alt="Microphone Icon" />
         </div>
         <div className="icons-grid-item">
-          <img src={IconMusic} />
+          <img src={IconMusic} alt="Music Icon" />
         </div>
       </div>
     </div>

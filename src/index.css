@@ -111,3 +111,76 @@ code {
 .icons-grid-item {
   opacity: 0.5;
 }
+
+.input-box {
+  width: 25vw;
+  padding: 0.8em;
+  border-radius: 1em;
+  border: solid rgba(0, 0, 0, 0.2) 2px;
+  box-shadow: var(--icon-shadow);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input {
+  font-size: medium;
+  font-family: "Lexend", sans-serif;
+}
+
+.contact-form {
+  font-size: large;
+  margin-top: 2em;
+  display: grid;
+
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-gap: 0.5em;
+}
+
+textarea {
+  font-family: "Lexend", sans-serif;
+  font-size: medium;
+  resize: none;
+  width: 25vw;
+  height: 10vh;
+  padding: 0.8em;
+  border-radius: 1em;
+  border: solid rgba(0, 0, 0, 0.2) 2px;
+  box-shadow: var(--icon-shadow);
+}
+
+.input-button {
+  border: none;
+  width: 10vw;
+  height: 50px;
+  font-size: 21px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    90deg,
+    rgba(105, 102, 234, 1) 0%,
+    rgba(145, 112, 215, 1) 100%
+  );
+  border-radius: 25px;
+  margin-top: 1em;
+}
+
+.input-button:hover {
+  cursor: pointer;
+}
+
+.checkbox-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: stretch;
+  width: 100%;
+}
+
+.checkbox-item {
+  display: grid;
+  grid-template-columns: 25px auto;
+}
