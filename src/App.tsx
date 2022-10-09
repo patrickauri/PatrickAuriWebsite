@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Navigation } from "./components/Navigation"
 import { Contact } from "./pages/Contact"
 import { Error } from "./pages/Error"
+import { FAQ } from "./pages/FAQ"
 import { Home } from "./pages/Home"
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
         <Route path="/code"></Route>
         <Route path="/contact" element={<Contact />} />
         <Route path="/socials"></Route>
-        <Route path="/faq"></Route>
+        <Route path="/faq" element={<FAQ />} />
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Error />} />
       </Routes>
