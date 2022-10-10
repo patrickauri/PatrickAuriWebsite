@@ -38,7 +38,7 @@ code {
 
 .navigation {
   display: grid;
-  grid-template-columns: 65px auto 225px;
+  grid-template-columns: 65px auto;
   align-items: center;
   margin-top: 70px;
   margin-bottom: 120px;
@@ -265,6 +265,11 @@ summary:hover {
   width: 100vw;
   height: 100vh;
   transition: 0.3s;
+}
+
+.nav-bar-cta-closed {
+  display: grid;
+  grid-template-columns: auto 225px;
 }
 
 @media only screen and (max-width: 900px) {
