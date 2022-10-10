@@ -1,5 +1,9 @@
 import React from "react"
 
 export const Design = () => {
-  return <div>Design</div>
+  return (
+    <div className="content-wrapper">
+      <div className="title">Design</div>
+    </div>
+  )
 }
