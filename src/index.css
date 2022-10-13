@@ -122,6 +122,11 @@ code {
 
 .nav-cta-btn:hover {
   cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(119, 117, 234) 0%,
+    rgb(163, 132, 230) 100%
+  );
 }
 
 .title {
@@ -213,6 +218,11 @@ textarea {
 
 .input-button:hover {
   cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(119, 117, 234) 0%,
+    rgb(163, 132, 230) 100%
+  );
 }
 
 .checkbox-wrapper {
@@ -313,8 +323,23 @@ summary:hover {
 
 .musicplayer-buttons {
 }
-
 .musicplayer-timeline {
+}
+
+.code-wrapper {
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.code-card {
+  background-color: white;
+}
+
+.card-img {
+}
+
+.card-description {
 }
 
 @media only screen and (max-width: 900px) {
