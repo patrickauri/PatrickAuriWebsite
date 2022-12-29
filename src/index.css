@@ -1,5 +1,6 @@
 * {
   --text-color-main: #5e6286;
+  --text-color-secondary: #9c9fbc;
   --text-color-highlight: #777ba4;
   --icon-shadow: 2px 2px 15px rgba(0, 0, 0, 0.075);
 }
@@ -327,19 +328,61 @@ summary:hover {
 }
 
 .code-wrapper {
-  width: 80%;
+  grid-gap: 1em;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
 }
 
 .code-card {
+  border-radius: 25px;
   background-color: white;
+  padding: 1em;
 }
 
-.card-img {
+.card-TypeScript {
+  background-color: rgb(246, 246, 255);
 }
 
-.card-description {
+.card-JavaScript {
+  background-color: rgb(254, 255, 246);
+}
+
+.card-Python {
+  background-color: rgb(247, 255, 246);
+}
+
+.card-buttons-wrapper {
+  display: grid;
+}
+
+.card-button {
+  background: linear-gradient(
+    90deg,
+    rgba(105, 102, 234, 1) 0%,
+    rgba(145, 112, 215, 1) 100%
+  );
+  color: white !important;
+  margin: 0.5em;
+  padding: 0.3em;
+  text-align: center;
+  border-radius: 1em;
+}
+
+.card-button:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(119, 117, 234) 0%,
+    rgb(163, 132, 230) 100%
+  );
+}
+
+.card-topics {
+  font-size: 0.8em;
+  color: var(--text-color-secondary);
+}
+
+.card-title {
+  font-size: 1.5em;
 }
 
 @media only screen and (max-width: 900px) {
