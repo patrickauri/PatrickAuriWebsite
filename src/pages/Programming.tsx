@@ -13,8 +13,9 @@ export const Programming = () => {
     )
       .then((res) => res.json())
       .then((d) => {
+        
+        setGitData(d)
         if (gitData) {
-          setGitData(d)
         }
       })
   }
