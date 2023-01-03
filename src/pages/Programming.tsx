@@ -1,3 +1,5 @@
+import { faCode, faDesktop } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React, { useEffect, useState } from "react"
 
 export const Programming = () => {
@@ -8,29 +10,21 @@ export const Programming = () => {
   ]
 
   const getGitHubData = async () => {
-    const ignore = ["N3Bot2021", "SubJapanBot"]
+    const ignore = [
+      "N3Bot2021",
+      "SubJapanBot",
+      "shiritori-challenge",
+      "wordle-norsk",
+      "miraipodcastweb",
+    ]
     const response = await fetch(
       "https://api.github.com/users/patrickauri/repos"
     )
       .then((res) => res.json())
       .then((d) => {
         const filteredResults = d.filter((v: any) => {
-          console.log(v.name)
-          console.log(ignore.includes(v.name))
           return !ignore.includes(v.name)
         })
-        //console.log(d)
-        //console.log(filteredResults)
-
-        // d.filter((v: any) => {
-        //   let f = false
-        //   ignore.forEach((item: string) => {
-        //     if (item === v) {
-        //       f = true
-        //     }
-        //   })
-        //   return f
-        // })
         setGitData(filteredResults)
         if (gitData) {
         }
@@ -49,21 +43,23 @@ export const Programming = () => {
     return (
       <div className={`code-card card-${data.language}`}>
         <div className="card-description">
-          <p className="card-title">{data.name}</p>
-          <p className="card-language">{data.language}</p>
-          <p className="card-language">{data.description}</p>
-          <p className="card-updated">{data.updated_at}</p>
-          <p className="card-topics">{data.topics}</p>
+          <div className="card-top">
+            <p className="card-title">{data.name}</p>
+            <p className="card-language">{data.language}</p>
+          </div>
+          <p className="card-description">{data.description}</p>
           <div
             className="card-buttons-wrapper"
             style={data.homepage ? { gridTemplateColumns: "50% 50%" } : {}}
           >
             <a className="card-button" href={data.html_url} target="_blank">
-              See Code
+              <FontAwesomeIcon icon={faCode} />
+              <span style={{ marginLeft: "0.5em" }}>See Code</span>
             </a>
             {data.homepage ? (
               <a className="card-button" href={data.homepage} target="_blank">
-                Try
+                <FontAwesomeIcon icon={faDesktop} />
+                <span style={{ marginLeft: "0.5em" }}>Try</span>
               </a>
             ) : (
               ""

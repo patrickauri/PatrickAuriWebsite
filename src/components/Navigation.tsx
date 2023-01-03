@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import PatoLogo from "../assets/logos/PatoLogo.svg"
 import Borgir from "../assets/graphics/icon-borgir.svg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 
 export const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -34,6 +36,9 @@ export const Navigation = () => {
             </Link>
           </div>
           <div className="nav-bar-dropdown">
+            <span className="nav-bar-chevron">
+              <FontAwesomeIcon icon={faChevronDown} />
+            </span>
             Portfolio
             <div className="nav-bar-dropdown-wrapper">
               <Link to="/music" onClick={() => setMenuOpen(false)}>
